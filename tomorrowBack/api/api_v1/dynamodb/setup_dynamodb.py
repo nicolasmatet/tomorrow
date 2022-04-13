@@ -1,4 +1,3 @@
-import boto3
 import importlib
 from boto_default import get_default_client, get_default_ressource
 from execute_fixtures import execute_fixtures

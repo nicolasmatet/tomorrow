@@ -1,5 +1,6 @@
 import importlib
-from tomorrowBack.dynamodb.boto_default import get_default_ressource
+
+from dynamodb.boto_default import get_default_ressource
 
 
 def execute_fixtures(db=None):
