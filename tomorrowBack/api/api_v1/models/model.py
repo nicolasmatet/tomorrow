@@ -10,7 +10,7 @@ class Model:
 
     @classmethod
     def read(cls, key, db=None):
-        print(os.getenv('endpoint_url'))
+        print("endpoint_url", os.getenv('endpoint_url'))
         if db is None:
             db = boto3.resource('dynamodb', endpoint_url= settings.endpoint_url)
         table = db.Table('Question')

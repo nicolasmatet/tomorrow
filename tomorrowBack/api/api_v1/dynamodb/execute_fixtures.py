@@ -1,6 +1,6 @@
 import importlib
 
-from dynamodb.boto_default import get_default_ressource
+from api.api_v1.dynamodb.boto_default import get_default_ressource
 
 
 def execute_fixtures(db=None):
@@ -10,5 +10,4 @@ def execute_fixtures(db=None):
     for fixture_name in fixture_module.__all__:
         fixture = getattr(fixture_module, fixture_name)
         for pk, value in enumerate(fixture.values):
-            fixture.model.write({"id": pk, **value}, db)
-
+            fixture.model.write({"id": pk, "type": 1, **value}, db)

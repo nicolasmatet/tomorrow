@@ -1,8 +1,11 @@
 import importlib
+
+import boto3
+
 from boto_default import get_default_client, get_default_ressource
 from execute_fixtures import execute_fixtures
 
-models = importlib.import_module('tomorrowBack.api.api_v1.models')
+models = importlib.import_module('api.api_v1.models')
 
 
 def create_schema(client=None, ressouce=None):

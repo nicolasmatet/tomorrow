@@ -1,5 +1,4 @@
-
-from tomorrowBack.api.api_v1.models import Question
+from api.api_v1.models import Question
 
 
 class FixtureQuestions:
@@ -144,5 +143,12 @@ class FixtureQuestions:
             "dansé dans l'ascenseur",
             "essayé un préservatif aromatisé",
             "rompu au téléphone",
-            "renvoyé ma nourriture au chef"]}
+            "renvoyé ma nourriture au chef"]},
+        {"title": "Choisissez:", "type": 2, "choices": ["owl 1.jpg", "owl 2.jpg", "owl 3.jpg", "owl 4.jpg"]},
+        {"title": "Choisissez:", "type": 2, "choices": ["dog 1.jpg", "dog 2.jpg", "dog 3.jpg", "dog 4.jpg"]},
+        {"title": "Choisissez:", "type": 2, "choices": ["bird 1.jpg", "bird 2.jpg", "bird 3.jpg", "bird 4.jpg"]},
+        {"title": "Choisissez:", "type": 2,
+         "choices": ["animal 1.jpg", "animal 2.jpg", "animal 3.jpg", "animal 4.jpg"]},
+        {"title": "Choisissez:", "type": 2, "choices": ["cat 1.jpg", "cat 2.jpg", "cat 3.jpg", "cat 4.jpg"]},
+        {"title": "Choisissez:", "type": 2, "choices": ["geometric figure 1.png", "geometric figure 2.png", "geometric figure 3.png", "geometric figure 4.png"]}
     ]
